@@ -1,0 +1,43 @@
+
+XGBOOST TEST REPORT
+==============================
+
+Timestamp:
+2026-05-23 20:00:48.396811
+
+Dataset:
+Test images directory: C:\Users\macie\Desktop\Projekty\photo_rating_system\images\tests_images
+Ratings file: data\blind_tests\test_ratings.csv
+Images tested: 64
+
+Features:
+Generated live from test images using CLIP
+
+Model:
+Loaded from: data\models\photo_rating_model_xgboost.joblib
+XGBRegressor
+
+Metrics:
+MAE: 1.00
+MSE: 1.75
+RMSE: 1.32
+
+Baseline:
+Baseline MAE: 2.23
+
+Biggest mistake:
+Filename: 35907c9166f9a882ddb224dd40a6.webp
+True rating: 1.00
+Predicted rating: 5.10
+Absolute error: 4.10
+
+Smallest mistake:
+Filename: 1_vfXSFjNaa1iAhjFCEKwejQ.jpg
+True rating: 9.00
+Predicted rating: 8.98
+Absolute error: 0.02
+
+Interpretation:
+MAE mowi, o ile punktow srednio myli sie model.
+RMSE mocniej karze duze bledy.
+Baseline MAE pokazuje wynik prostego zgadywania sredniej oceny.

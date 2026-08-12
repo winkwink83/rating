@@ -1,0 +1,33 @@
+
+TRAINING REPORT
+==============================
+
+Timestamp:
+2026-05-12 21:13:13.463601
+
+Dataset:
+Total samples: 268
+Training samples: 214
+Test samples: 54
+
+Model:
+RandomForestRegressor
+n_estimators: 100
+
+Metrics:
+MAE: 1.15
+MSE: 2.13
+RMSE: 1.46
+R2 score: 0.41
+
+Baseline:
+Baseline MAE: 1.59
+
+Interpretation:
+MAE mówi, o ile punktów średnio myli się model.
+RMSE mocniej karze duże błędy.
+R2 pokazuje, czy model wyjaśnia zmienność ocen.
+Baseline MAE pokazuje wynik prostego zgadywania średniej oceny.
+
+Jeśli MAE modelu jest niższe niż Baseline MAE, model uczy się czegoś sensownego.
+Jeśli MAE modelu jest podobne albo gorsze, model głównie zgaduje średnią.

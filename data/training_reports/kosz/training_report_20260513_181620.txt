@@ -1,0 +1,49 @@
+
+TRAINING REPORT
+==============================
+
+Timestamp:
+2026-05-13 18:16:20.826935
+
+Dataset:
+Total ratings in CSV: 1074
+Samples with embeddings: 1074
+Training samples: 859
+Test samples: 215
+
+Features:
+Loaded from: data\embeddings_cache.npz
+
+Model:
+RandomForestRegressor
+n_estimators: 100
+
+Metrics:
+MAE: 1.18
+MSE: 2.13
+RMSE: 1.46
+R2 score: 0.66
+
+Baseline:
+Baseline MAE: 2.12
+
+Biggest mistake:
+Filename: 00001260.jpg
+True rating: 1.00
+Predicted rating: 5.02
+Absolute error: 4.02
+
+Smallest mistake:
+Filename: 00001355.jpg
+True rating: 8.00
+Predicted rating: 7.98
+Absolute error: 0.02
+
+Interpretation:
+MAE mówi, o ile punktów średnio myli się model.
+RMSE mocniej karze duże błędy.
+R2 pokazuje, czy model wyjaśnia zmienność ocen.
+Baseline MAE pokazuje wynik prostego zgadywania średniej oceny.
+
+Jeśli MAE modelu jest niższe niż Baseline MAE, model uczy się czegoś sensownego.
+Jeśli MAE modelu jest podobne albo gorsze, model głównie zgaduje średnią.

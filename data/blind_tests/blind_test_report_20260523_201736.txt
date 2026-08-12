@@ -1,0 +1,42 @@
+
+BLIND TEST REPORT
+==============================
+
+Timestamp:
+2026-05-23 20:17:36.918927
+
+Dataset:
+Test images directory: C:\Users\macie\Desktop\Projekty\photo_rating_system\images\tests_images
+Ratings file: C:\Users\macie\Desktop\Projekty\photo_rating_system\data\blind_tests\test_ratings.csv
+Images tested: 64
+
+Features:
+Generated live from test images using CLIP
+
+Model:
+Loaded from: data\models\photo_rating_model.joblib
+
+Metrics:
+MAE: 1.18
+MSE: 2.48
+RMSE: 1.58
+
+Baseline:
+Baseline MAE: 2.23
+
+Biggest mistake:
+Filename: 35907c9166f9a882ddb224dd40a6.webp
+True rating: 1.00
+Predicted rating: 6.26
+Absolute error: 5.26
+
+Smallest mistake:
+Filename: pobrane.jfif
+True rating: 6.00
+Predicted rating: 6.05
+Absolute error: 0.05
+
+Interpretation:
+MAE mówi, o ile punktów średnio myli się model.
+RMSE mocniej karze duże błędy.
+Baseline MAE pokazuje wynik prostego zgadywania średniej oceny.

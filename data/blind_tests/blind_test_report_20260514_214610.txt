@@ -1,0 +1,46 @@
+
+BLIND TEST REPORT
+==============================
+
+Timestamp:
+2026-05-14 21:46:11.176173
+
+Dataset:
+Test images directory: C:\Users\macie\Desktop\Projekty\photo_rating_system\images\tests_images
+Images tested: 64
+
+Features:
+Generated live from test images using CLIP
+
+Model:
+Loaded from: data\models\photo_rating_model.joblib
+RandomForestRegressor
+n_estimators: 100
+
+Metrics:
+MAE: 1.22
+MSE: 2.58
+RMSE: 1.61
+
+Baseline:
+Baseline MAE: 2.33
+
+Biggest mistake:
+Filename: 35907c9166f9a882ddb224dd40a6.webp
+True rating: 1.00
+Predicted rating: 6.26
+Absolute error: 5.26
+
+Smallest mistake:
+Filename: Katarzyna_Cichopek_2018.jpg
+True rating: 7.00
+Predicted rating: 6.98
+Absolute error: 0.02
+
+Interpretation:
+MAE mówi, o ile punktów średnio myli się model.
+RMSE mocniej karze duże błędy.
+Baseline MAE pokazuje wynik prostego zgadywania średniej oceny.
+
+Jeśli MAE modelu jest niższe niż Baseline MAE, model uczy się czegoś sensownego na nowych zdjęciach.
+Jeśli MAE modelu jest podobne albo gorsze, model słabo generalizuje na nowe zdjęcia.
